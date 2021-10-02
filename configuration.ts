@@ -18,8 +18,8 @@ export default {
         "user_info_endpoint_uri": "https://dev-ro2ag7u3.us.auth0.com/userinfo",
         "auth_uri": "https://dev-ro2ag7u3.us.auth0.com/api/v2/token",
         "iss": "https://dev-ro2ag7u3.us.auth0.com/",
-        "client-id": "2O6QvNCUFWna7jrDfZkI9g16o790dRuJ",
-        "client-secret": "QuOmXuEg1sW5AWJHcwPajNj_eS3nwoum7eyJBB1wNHYDo8yuMXXWNrh13rwNUhfz"
+        "client-id": "*",
+        "client-secret": "*"
     },
     "mongo": {
         "uri": "mongodb://localhost:27017/tenant-management",
