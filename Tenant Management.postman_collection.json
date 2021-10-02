@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "02345d8a-1c4e-40f3-89e2-a68a9577a034",
+		"name": "Tenant Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tenant",
+			"item": [
+				{
+					"name": "GET Tenants",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tenants",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tenants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Tenant",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tenants/00000000-6157-580b-0a37-5d346cc08c1a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tenants",
+								"00000000-6157-580b-0a37-5d346cc08c1a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Tenant",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nonce\":\"6157580b0a375d346cc08c1b\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tenants/00000000-6157-580b-0a37-5d346cc08c1a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tenants",
+								"00000000-6157-580b-0a37-5d346cc08c1a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE Tenant",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"COMP3\",\r\n    \"name\": \"Company 3\",\r\n    \"description\": \"This is company 3\",\r\n    \"website\":\"http://thiscompanythree.com\",\r\n    \"status\": \"new\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{uri}}/api/v1/tenants",
+							"host": [
+								"{{uri}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tenants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Tenant",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nonce\":\"6157626b2c77276c10814992\",\r\n     \"timestamps\": {\r\n        \"deleted\": null\r\n     }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tenants/00000000-6157-580b-0a37-5d346cc08c1a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tenants",
+								"00000000-6157-580b-0a37-5d346cc08c1a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{uri}}/health",
+					"host": [
+						"{{uri}}"
+					],
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{uri}}/list",
+					"host": [
+						"{{uri}}"
+					],
+					"path": [
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
