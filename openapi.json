@@ -255,28 +255,62 @@
       "TenantPostResponse": {
         "type": "object",
         "properties": {
-          "order_id": {
+          "id": {
             "type": "string"
+          },
+          "code": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "timestamps": {
+            "deleted": { 
+              "type": "date"
+            },
+            "created": {
+              "type": "date"
+            },
+            "updated": {
+              "type":"date"
+            }
           }
         }
       },
       "TenantGetInstanceResponse": {
         "type": "object",
         "properties": {
-          "create_date_time": {
+          "id": {
             "type": "string"
           },
-          "reference_id": {
+          "code": {
             "type": "string"
           },
-          "order_id": {
+          "name": {
             "type": "string"
           },
-          "message": {
+          "description": {
             "type": "string"
           },
           "status": {
             "type": "string"
+          },
+          "timestamps": {
+            "deleted": { 
+              "type": "date"
+            },
+            "created": {
+              "type": "date"
+            },
+            "updated": {
+              "type":"date"
+            }
           }
         }
       },
@@ -284,19 +318,13 @@
         "type": "array",
         "items": {
           "properties": {
-            "create_date_time": {
+            "id": {
               "type": "string"
             },
-            "reference_id": {
+            "name": {
               "type": "string"
             },
-            "order_id": {
-              "type": "string"
-            },
-            "message": {
-              "type": "string"
-            },
-            "status": {
+            "code": {
               "type": "string"
             }
           }
