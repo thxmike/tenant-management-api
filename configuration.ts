@@ -2,7 +2,7 @@ export default {
     "site": {
         "port": "3000",
         "whitelist": [
-            "https://*.gravitydiagnostics.com"
+            "https://*.*.com"
         ],
         "allowed_methods": ["GET", "POST", "PUT", "PATCH", "OPTIONS", "DELETE"],
         "allowed_headers": ["Content-Type", "Authorization"],
