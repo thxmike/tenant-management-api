@@ -113,7 +113,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"code\": \"COMP3\",\r\n    \"name\": \"Company 3\",\r\n    \"description\": \"This is company 3\",\r\n    \"website\":\"http://thiscompanythree.com\",\r\n    \"status\": \"new\"\r\n}",
+							"raw": "{\r\n    \"code\": \"COMP4\",\r\n    \"name\": \"Company 4\",\r\n    \"description\": \"This is company 4\",\r\n    \"website\":\"http://thiscompany4.com\",\r\n    \"status\": \"new\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
