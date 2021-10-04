@@ -16,7 +16,7 @@
     "node": ">=14.0.0"
   },
   "dependencies": {
-    "@thxmike/configuration": "^0.2.8",
+    "@thxmike/configuration": "^0.2.9",
     "@thxmike/console-debug": "0.0.4",
     "@thxmike/express-app-controller": "^0.1.22",
     "@thxmike/express-common-controller": "^0.1.17",

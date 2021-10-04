@@ -21,8 +21,9 @@ An example launch.json and tasks.json files have been included in this project t
 
 ### Prerequisits
 
-NodeJS vs 14.6 - https://nodejs.org/en/download/
-MongoDB - https://docs.mongodb.com/manual/installation/
+- NodeJS vs 14.6 - https://nodejs.org/en/download/
+- MongoDB - https://docs.mongodb.com/manual/installation/
+
 Once NodeJS is installed run the following off the root of the project directory
 :
 ```
